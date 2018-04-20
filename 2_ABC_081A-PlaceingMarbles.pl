@@ -2,6 +2,4 @@
 use strict;
 use warnings;
 
-my $str = "101";
-
-print scalar( my @arr = $str =~ m/1/g );
+print scalar( my @arr = $ARGV[0] =~ m/1/g ) if $ARGV[0];
