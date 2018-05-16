@@ -69,7 +69,7 @@ sub getBillCombinations {
     }
     
     for (my $y = $int_y; $y>0; $y--) {
-        for (my $h=0; $h<$N-$y;$h++) {
+        for (my $h=0; $h<=$N-$y;$h++) {
             $loop++;
             my $n = $N-$y-$h;
             # 金額オーバー以降はインクリメント中止
